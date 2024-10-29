@@ -1,0 +1,54 @@
+Upload your .java file(s) for the 3 programs to Ecampus under the "Submit Homework" menu option.
+
+
+Program 1  Write a program named randomsum.java that asks the user to enter a number.  The program then calculates 4 random numbers that sum up to the user's number.  It should output different (random) numbers each time.  Below are some example runs:
+
+Please enter an Integer:  100
+These numbers sum up to 100:  50, 8, 19, 23
+
+Please enter an Integer:  100
+These numbers sum up to 100:  17, 42, 5, 36
+
+Please enter an Integer:  25
+These numbers sum up to 25:  1, 9, 11, 4
+
+
+Program 2  Create a program named different.java that has 2 overloaded methods named SameDifferent.  The first method takes 3 integer parameters, and the second method takes 4 integer parameters.
+
+- If all the parameters are the same, the method returns "same".
+- Otherwise, if at least half the integers are the same, it returns "similar".
+- If all the parameters are different, it returns "different".
+
+Test your methods with this main program:
+
+public class different
+{
+	public static void main (String[] args)
+	{
+		System.out.println("3,1,5 = " + SameDifferent(3,1,5));
+		System.out.println("2,0,2 = " + SameDifferent(2,0,2));
+		System.out.println("5,5,5 = " + SameDifferent(5,5,5));
+		System.out.println("8,9,2,4 = " + SameDifferent(8,9,2,4));
+		System.out.println("7,7,1,7 = " + SameDifferent(7,7,1,7));
+		System.out.println("4,4,4,4 = " + SameDifferent(4,4,4,4));
+	}
+	
+	// create the two SameDifferent methods here
+}
+
+
+Program 3  Using this main program, create a Student class.  The class should contain a constructor to take the four variables as parameters.  In the main program, calculate and output the average Age and average GPA.
+public class college
+{
+	public static void main(String[] args)
+	{
+		Student S1 = new Student("Gonzalez", "Juan", 19, 3.8);
+		Student S2 = new Student("Brown", "Leanne", 20, 3.4);
+		Student S3 = new Student("Kumar", "Raj", 20, 3.5);
+		Student S4 = new Student("Tucker", "Alexa", 21, 3.9);
+
+		// calculate and output average Age and average GPA
+	}
+}
+
+// create class Student here with a constructor to take the 4 parameters
