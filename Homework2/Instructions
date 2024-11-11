@@ -1,1 +1,57 @@
+Upload your .java file(s) to Ecampus under the "Submit Homework" menu option.  It is o.k. to combine all the programs into a single compilable java file.
+ 
+
+1. Create a program named bunnies.java that recursively calculates the total number of rabbit ears.  Rabbits are in a line numbered 1, 2, 3, 4, ...  The even numbered rabbits have 2 ears.  The odd numbered rabbits have 3 ears.  The exception is that rabbits 5,15,25,35, etc. have only 1 ear and rabbits 10,20,30,40, etc. have 4 ears.
+
+Create a recursive method (no for or while loops) to calculate the total number of ears named BunnyEars(n).  The recursive method should calculate the number of ears on the current rabbit, and call itself with the number of ears on the previous rabbit.
+
+BunnyEars(1) = 3         BunnyEars(2) = 5        BunnyEars(3) = 8       BunnyEars(4) = 10      BunnyEars(5) = 11     
+BunnyEars(6) = 13       BunnyEars(7) = 16       BunnyEars(8) = 18    BunnyEars(9) = 21      BunnyEars(10) = 25
+
+        1        2        3        4        5        6        7        8        9        10
+     |\ /\ /|   |\/|   |\ /\ /|   |\/|      /\      |\/|   |\ /\ /|   |\/|   |\ /\ /| |\/\/\/|
+     || || ||   ||||   || || ||   ||||      ||      ||||   || || ||   ||||   || || || ||||||||
+      \||||/    \||/    \||||/    \||/      ||      \||/    \||||/    \||/    \||||/  \||||||/
+      / oo \   / oo \   / oo \   / oo \   / oo \   / oo \   / oo \   / oo \   / oo \   / oo \ 
+     =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/= =\_ Y_/=
+
+Example output
+How many bunnies are in the line? 5
+This is a total of 11 ears.
+
+2. Create a program named sum.java that recursively calculates the sum of all the digits in an integer.  
+Create a recursive method (no for or while loops) named SumDigits(n).
+
+Hint:  When you mod an integer by 10, you get the rightmost digit 
+(169 % 10 is 9).  When you divide an integer by 10, you remove the 
+rightmost digit (169 / 10 = 16).
+
+SumDigits(1)  = 1
+SumDigits(14)  = 5
+SumDigits(169)  = 16
+
+Example output
+Please enter an integer: 169
+The sum of these digits is 16.
+
+3. Write a program named recurse.java that recursively reverses the characters in a String.  Create a recursive function named RevString that returns the last character of a string + the remainder of the string.  
+
+Example output
+Please enter a string: video gamer
+Your string in reverse: remag oediv
+
+
+4. Write a program fibonacci.java that recursively calculates the nth Fibonacci number.  Prompt the user which Fibonacci number to calculate.  Also, calculate the number of method calls and computer time is used for the calculation.
+
+Example output
+Which Fibonacci number would you like to calculate? 42
+
+This Fibonacci number = 267914296
+Number of method calls made = 866988873
+Seconds used for this calculation = 4.292174803
+
+
+
+
+
 
