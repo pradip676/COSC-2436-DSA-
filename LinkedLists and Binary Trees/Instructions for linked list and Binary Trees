@@ -1,0 +1,39 @@
+Please demo the programs to the instructor during open lab or upload the .java files to Ecampus
+
+
+1.  Create a linked list using the Node class that contains the first million prime numbers (primes4.txt).  It should have a menu with these options:
+
+1 = Search for a Number  (let the user enter a number to search for)
+2 = Add a new Number  (let the user enter a number and add it to the head of the list)
+3 = Delete a Number  (let the user enter a number and delete it if found)
+4 = Exit
+
+class Node
+{
+   int Data;
+   Node Next;
+
+   // you may want to also create a constructor that takes the Data as a parameter
+   Node() 
+   {
+      Next = null;
+   }
+}
+
+Extra Credit:  Sort your linked list while you are building it.
+
+
+2.  Create binary search tree (BST) that contains the first million prime numbers.  After you are reading in the data, output the maximum and average depth of the BST.  Allow the user to enter a number to see whether or not it is prime.  If the number is found, output the depth at which it was found.  If the number isn't found, output the nearest prime number greater than and the nearest prime number less than the user's number. 
+
+Example output
+
+Creating Binary Tree from 1000000 prime numbers...
+The maximum depth of the tree is ?
+The average depth of the tree is ?
+
+Enter a number to see if it's in the tree:
+25
+Your number was not found.
+The nearest prime number less than your number is 23
+The nearest prime number greater than your number is 29
+ 
